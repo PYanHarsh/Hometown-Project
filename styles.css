@@ -103,6 +103,10 @@ body {
     color: var(--color-headline);
 }
 
+.activity-card > p {
+    font-size: 0.9rem;
+}
+
 .card--image {
     height: 100px;
     width: 100px; 
@@ -142,15 +146,35 @@ body {
 }
 
 .guide-card-information-container {
-    display: inline-block;  
+    display: inline-block; 
 }
 
 .guide--image {
     height: 250px;
     width: 200px;
     border-radius: 20px;
+    transition: 0.4s;
+    cursor: pointer;
 }
 
-@media (min-width: 640px) {
-     body {font-size:1rem;} 
+.guide--image:hover {
+    transform: scale(1.2);
+}
+
+
+
+@media only screen and (max-width: 640px) {
+     .container {
+        width: 100%;
+    }
+     .container--hero {
+        width: 100%;
+    }
+     .cards-container {
+        width: 100%;
+        height: auto;
+    }
+     .guide-card {
+        width: 100%;
+     }
     }
