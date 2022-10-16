@@ -150,3 +150,7 @@ body {
     width: 200px;
     border-radius: 20px;
 }
+
+@media (min-width: 640px) {
+     body {font-size:1rem;} 
+    }
