@@ -106,6 +106,7 @@ body {
   text-align: center;
   align-items: center;
   color: var(--color-headline);
+  padding: 0 10px 0 10px;
 }
 
 .activity-card > p {
@@ -123,7 +124,7 @@ body {
 }
 
 .card--image:hover {
-  transform: scale(1.5);
+  transform: scale(1.35);
 }
 
 .container--guide {
@@ -161,13 +162,13 @@ body {
 .guide--image {
   height: 250px;
   width: 200px;
-  border-radius: 20px;
+  border-radius: 10px;
   transition: 0.4s;
   cursor: pointer;
 }
 
 .guide--image:hover {
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 
 @media only screen and (max-width: 800px) {
