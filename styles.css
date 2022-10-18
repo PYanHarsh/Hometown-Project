@@ -1,184 +1,235 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=IM+Fell+English&family=Metamorphous&display=swap');
 
 :root {
-    --color-dark-background: #16161a;
-    --color-light-background: #242629;
-    --color-headline: #fffffe;
-    --color-paragraph: #94a1b2;
-    --color-highlight: #7f5af0;
-    --color-cta: #2cb67d;
-
+  --color-dark-background: #16161a;
+  --color-light-background: #242629;
+  --color-headline: #fffffe;
+  --color-paragraph: #94a1b2;
+  --color-highlight: #7f5af0;
+  --color-cta: #2cb67d;
 }
 
 body {
-    margin: 1rem auto;
-    padding: 0;
-    box-sizing:border-box;
-    background-color: var(--color-dark-background);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Metamorphous', cursive;
+  margin: 1rem auto;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--color-dark-background);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Metamorphous", cursive;
 }
 
-.container { 
-    display: flex; 
-    height: auto;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .outer-wrapper {
-    width: 45rem;
-    margin: 0 auto;
-    margin-bottom: 1.4rem;
-    box-shadow: var(--color-highlight) 0px 22px 70px 4px;
+  width: 45rem;
+  margin: 0 auto;
+  margin-bottom: 1.4rem;
+  border-radius: 20px;
+  box-shadow: var(--color-highlight) 0px 22px 70px 4px;
 }
 
-.container--hero { 
-    width: 45rem;
-    height: 21.44rem; 
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px 10px 0 0; 
+.container--hero {
+  width: 45rem;
+  height: 21.44rem;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 10px 0 0;
 }
 
 .container--hero > h1 {
-    color: var(--color-headline);
-    background-color: var(--color-highlight);
-    width: 9em;
-    height: auto;
-    text-align: center; 
-    border-radius: 8px;
-    padding: 5px 3px;
-    text-shadow: 2px 2px 4px black;
+  color: var(--color-headline);
+  background-color: var(--color-highlight);
+  width: 20rem;
+  height: auto;
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px 3px;
+  text-shadow: 2px 2px 4px black;
 }
 
 .container--hero > h2 {
-    color: var(--color-headline);
-    background-color: var(--color-highlight);
-    width: 25.75em;
-    height: auto;
-    text-align: center; 
-    border-radius: 8px;
-    padding: 8px 3px; 
-    text-shadow: 2px 2px 4px black;
+  color: var(--color-headline);
+  background-color: var(--color-highlight);
+  width: 35.75rem;
+  height: auto;
+  text-align: center;
+  border-radius: 8px;
+  padding: 8px 3px;
+  text-shadow: 2px 2px 4px black;
 }
 
 .cards-container {
-    display: flex;
-    flex-direction: row; 
-    margin-top: 1.4rem;
-    background-color: var(--color-light-background);
-    width: inherit;
-    height: auto;
+  background-color: var(--color-light-background);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  margin-top: 1.4rem;
+  padding-bottom: 2rem;
 }
 
 .container--activities {
-    background-color: var(--color-light-background);
-    border-radius: none; 
-    width: 45rem;
-    height: 21.44rem;
-    text-align: center;
-    padding-top: 1.6rem;
+  background-color: var(--color-light-background);
+  border-radius: none;
+  width: 45rem;
+  text-align: center;
+  padding-top: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
 }
 
 .header-activities {
-    width: 100%;
-    height: auto; 
+  width: 100%;
+  height: auto;
 }
 
 .header-activities > h3 {
-    margin: 1.4rem 0;
-    color: var(--color-headline);
+  margin: 1.4rem 0;
+  color: var(--color-headline);
 }
 
 .activity-card {
-    text-align: center; 
-    align-items: center; 
-    width: 12.4rem;
-    height: auto;
-    margin: 0 auto;
-    color: var(--color-headline);
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 60%;
+  text-align: center;
+  align-items: center;
+  color: var(--color-headline);
 }
 
 .activity-card > p {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 
 .card--image {
-    height: 100px;
-    width: 100px; 
-    border-radius: 50%;
-    border: 1px solid var(--color-highlight);
-    padding: 2%; 
-    transition: 0.4s;
-    cursor: pointer;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid var(--color-highlight);
+  padding: 2%;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
 .card--image:hover {
-    transform: scale(1.5);
+  transform: scale(1.5);
 }
 
 .container--guide {
-    background-color: var(--color-light-background);
-    border-radius: 0 0 10px 10px; 
-    width: 45rem;
-    height: 21.44rem;
-    text-align: center;
-    padding-top: 1rem;
-    color: var(--color-headline);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light-background);
+  border-radius: 0 0 10px 10px;
+  width: 45rem;
+  text-align: center;
+  color: var(--color-headline);
+  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
 .guide-card {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    background-color: var(--color-highlight);
-    text-shadow: 2px 2px 4px black;
-    width: 25rem;
-    height: 18.37rem;
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-    box-shadow: 10px 5px 5px var(--color-dark-background);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: var(--color-highlight);
+  text-shadow: 2px 2px 4px black;
+  width: 36rem;
+  height: 18.37rem;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 10px 5px 5px var(--color-dark-background);
 }
 
 .guide-card-information-container {
-    display: inline-block; 
+  display: inline-block;
 }
 
 .guide--image {
-    height: 250px;
-    width: 200px;
-    border-radius: 20px;
-    transition: 0.4s;
-    cursor: pointer;
+  height: 250px;
+  width: 200px;
+  border-radius: 20px;
+  transition: 0.4s;
+  cursor: pointer;
 }
 
 .guide--image:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 100vw;
+  }
 
+  .container--hero {
+    width: 100vw;
+  }
 
-/*website responsiveness under construction
+  .guide-card {
+    width: 100vw;
+  }
 
-@media only screen and (max-width: 640px) {
-     .container {
-        width: 100%;
-    }
-     .container--hero {
-        width: 100%;
-    }
-     .cards-container {
-        width: 100%;
-        height: auto;
-    }
-     .guide-card {
-        width: 100%;
-     }
-    }
-    
-    */
+  .outer-wrapper {
+    width: 100vw;
+    margin: none;
+    padding: none;
+    box-shadow: none;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .container--hero {
+    width: 100vw;
+  }
+
+  .container--hero > h1 {
+    width: 50%;
+  }
+
+  .container--hero > h2 {
+    width: 90%;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .guide-card {
+    width: 80%;
+  }
+
+  .container--activities {
+    width: 100%;
+  }
+
+  .container--guide {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: none;
+    margin-bottom: none;
+    padding-bottom: 2rem;
+  }
+}
